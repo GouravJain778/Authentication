@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authentication</title>
+</head>
+<body>
+    <h3>welcome to geekforgeeks</h3>
+    {% if user.is_authenticated %}
+    <h3>hello {{ fname }}</h3>
+    <h4>you are sussesful login</h4>
+    <button type="singout"><a href="/singout">singout</a></button>
+
+    {% else %}
+    <button type="singup"><a href="/singup">singup</a></button>
+    <button type="singin"><a href="/singin">singin</a></button>
+    {% endif %}
+
+   
+    
+</body>
+</html>
